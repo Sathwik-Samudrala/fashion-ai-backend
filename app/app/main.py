@@ -6,8 +6,8 @@ from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 
-from app.config import APP_TITLE, APP_VERSION, CORS_ORIGINS, IMAGES_DIR
-from app.routes.recommendation import router as recommendation_router
+from .config import APP_TITLE, APP_VERSION, CORS_ORIGINS, IMAGES_DIR
+from .routes.recommendation import router as recommendation_router
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("fashion-ai")
