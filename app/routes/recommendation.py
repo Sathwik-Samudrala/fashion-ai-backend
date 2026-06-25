@@ -4,14 +4,6 @@ from fastapi import APIRouter, HTTPException, Query
 
 from app.config import GEMINI_API_KEY
 
-from app.models.user_profile import (
-    ChatRequest,
-    ChatResponse,
-    ProductOut,
-    RecommendationResponse,
-    UserProfile,
-)
-
 from app.services.llm_service import (
     generate_outfit_explanation,
     run_conversational_assistant,
