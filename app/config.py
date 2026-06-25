@@ -24,6 +24,12 @@ OUTFITS_PATH = os.path.join(DATA_DIR, "outfits.csv")
 
 # ── Gemini / LLM ──────────────────────────────────────────────────────────
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
+
+print("========== GEMINI DEBUG ==========")
+print("GEMINI_API_KEY found:", bool(GEMINI_API_KEY))
+print("Length:", len(GEMINI_API_KEY))
+print("==================================")
+
 # gemini-2.5-flash is stable, free-tier eligible, and supported well past
 # this assignment's lifetime. Override via .env if you'd like to try a
 # newer model (e.g. gemini-3.5-flash).
