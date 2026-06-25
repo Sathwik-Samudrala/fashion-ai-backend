@@ -2,9 +2,9 @@ from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Query
 
-from ..config import GEMINI_API_KEY
+from app.config import GEMINI_API_KEY
 
-from ..models.user_profile import (
+from app.models.user_profile import (
     ChatRequest,
     ChatResponse,
     ProductOut,
@@ -12,12 +12,12 @@ from ..models.user_profile import (
     UserProfile,
 )
 
-from ..services.llm_service import (
+from app.services.llm_service import (
     generate_outfit_explanation,
     run_conversational_assistant,
 )
 
-from ..services.recommendation_service import (
+from app.services.recommendation_service import (
     find_best_outfit,
     get_outfit_by_id,
     list_products,
