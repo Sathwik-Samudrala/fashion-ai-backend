@@ -172,6 +172,7 @@ def health():
     return {
         "status": "ok",
         "gemini_configured": bool(GEMINI_API_KEY),
+        "gemini_key_length": len(GEMINI_API_KEY),
         "products_loaded": int(len(products_df)),
         "outfits_loaded": int(len(outfits_df)),
     }
